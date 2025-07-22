@@ -3,6 +3,7 @@
 Este projeto é um sistema de controle de ponto de funcionários, feito em **Node.js** com **PostgreSQL**.  
 Permite registrar entradas e saídas, gerar relatórios em PDF, gerenciar funcionários e usuários (admin e comuns).
 
+
 ---
 
 ## ✅ **Pré-requisitos**
