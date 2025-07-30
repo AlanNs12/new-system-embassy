@@ -6,6 +6,10 @@ const authRoutes = require('./routes/authRoutes');
 const funcionarioRoutes = require('./routes/funcionarioRoutes');
 const registroRoutes = require('./routes/registroRoutes');
 
+
+const funcionariosRoutes = require('./routes/funcionarios');
+
+
 const app = express();
 app.use(cors());
 app.use(express.json())
@@ -17,6 +21,10 @@ app.use(express.json())
 app.use('/api/auth', authRoutes);
 app.use('/api/funcionarios', funcionarioRoutes);
 app.use('/api/registros', registroRoutes);
+
+app.use('/funcionarios', funcionariosRoutes);
+
+
 
 //Rota de teste para verificar se o servidor está funcionando
 app.get('/', (req, res) => {

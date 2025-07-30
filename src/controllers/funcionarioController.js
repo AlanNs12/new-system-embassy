@@ -1,6 +1,7 @@
 const pool = require('../config/db');
 
 module.exports = {
+<<<<<<< feature/implement-routes
     async create(req, res) {
         try {
             const { nome, cargo, horario_trabalho } = req.body;
@@ -70,4 +71,5 @@ module.exports = {
             res.status(500).json({ message: 'Erro ao deletar funcionário' });
         }
     }
+
 };
